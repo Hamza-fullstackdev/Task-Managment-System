@@ -7,9 +7,10 @@ import Tasks from "./pages/Tasks";
 import Tasksdetail from "./pages/Tasksdetail";
 import Users from "./pages/Users";
 import Trash from "./pages/Trash";
+import { useSelector } from "react-redux";
 
 function Layout() {
-  const { user } = ""
+  const { user } = useSelector((state)=>state.auth);
 
   const location = useLocation();
 
